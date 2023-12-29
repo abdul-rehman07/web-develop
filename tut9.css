@@ -1,0 +1,20 @@
+        /* Elements */
+        p{
+            background-color: purple;
+            border: 3px solid black;
+        }
+        /* Ids */
+        
+        #colors{
+            color: gray;
+            background-color: yellow;
+        }
+        /* Classes */
+        .Cblue{
+            color: cornsilk;
+            background-color:aquamarine;
+        }
+        /* Grouping */
+        footer,span{
+            background-color: peru;
+        }
