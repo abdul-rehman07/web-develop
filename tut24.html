@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+h1{
+    background-color: red;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+/* div p{
+    background-color: gray;
+    color: blue;
+} */
+/* div li p{
+    background-color: gray;
+    color: blue;
+} */
+/* div > p{
+    color: yellowgreen;
+    background-color: blue;
+} */
+div + p{
+    color: aqua;
+    background-color: brown;
+}
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="para">
+            <ul>
+                <li> <p>This is list paragraph</p></li>
+            </ul>
+            <p>This is first paragraph</p>
+        </div>
+        <p>This is second paragraph</p>
+    </div>
+    <p>This is third paragraph</p>
+</body>
+</html>
