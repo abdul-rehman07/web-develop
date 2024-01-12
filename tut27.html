@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vriables and Custom properties</title>
+    <style>
+        :root {
+
+            --box-color: yellow;
+            --primary-color: pink;
+            --danger-color: rgb(60, 255, 0);
+            --maxw: 233px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            box-shadow: 5px 5px 4px var(--primary-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            display: flex;
+            background-color: var(--danger-color);
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
