@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Area</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+grid-template-areas: 
+' navbar navbar navbar navbar'
+'secton section section aside'
+'footer footer footer footer'
+
+;
+}
+.item{
+    border: 3px solid orange;
+    background-color: yellow;
+    padding: 12px 13px;
+}
+#navbar{
+grid-area: navbar;
+}
+#section{
+    grid-area: section;
+
+}
+#aside{
+    grid-area: aside;
+
+}
+footer{
+    grid-area: footer;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+   <div id="navbar" class="item">
+    home about contact us
+   </div>
+   <div id="section" class="item">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minima quam consequatur eaque laudantium harum, culpa velit? Velit sed praesentium ullam nesciunt assumenda, corporis aspernatur quibusdam autem, nulla cupiditate suscipit? sit amet consectetur adipisicing elit. Obcaecati accusantium iure illo vel incidunt facere tempora enim odit dignissimos. Rerum consequuntur, optio ea neque quaerat debitis culpa porro dolorum omnis?</div>
+   <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsum, tenetur dicta dolorum ipsa eaque ullam architecto et quas fug Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nostrum atque vero dolores quibusdam, a animi incidunt sed iure harum pariatur? Quis modi laborum rerum commodi, numquam odio consectetur ipsa.iat, asperiores quos facilis quo. Earum quod dolor ex maxime quis?</div>
+   <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ut officiis?</footer>
+
+  </div>
+</body>
+</html>
