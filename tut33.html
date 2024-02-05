@@ -10,8 +10,8 @@
             display: grid;
             grid-gap: 1rem;
             grid-template-areas:
-                ' navbar navbar navbar navbar'
-                'secton section section aside'
+                ' navbar  navbar navbar navbar'
+                'section section section aside'
                 'footer footer footer footer'
 
             ;
@@ -40,11 +40,37 @@
             body {
                 background-color: blue;
             }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .block {
+                display: block;
+                text-align: center;
+            }
         }
 
         @media (min-width:300px) and (max-width:500px) {
             body {
                 background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .block {
+                display: block;
+                text-align: center;
             }
         }
 
@@ -52,12 +78,26 @@
             body {
                 background-color: pink;
             }
+
+            .container {
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .block {
+                display: block;
+                text-align: center;
+            }
         }
 
         @media (min-width:800px) {
             body {
                 background-color: green;
             }
+
         }
 
         .bdr {
@@ -70,15 +110,18 @@
 <body>
     <div class="container">
         <nav class="bdr">
-            <span>Home</span>
-            <span>about</span>
-            <span>contact us</span>
+            <span class="block">Home</span>
+            <span class="block">About</span>
+            <span class="block">Contact Us</span>
+            <span class="block">Services</span>
         </nav>
         <section class="bdr">
             <h2>More for CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore totam praesentium pariatur et sit aliquam eum deserunt dolores necessitatibus, voluptates placeat consectetur incidunt aperiam odio voluptatum a dolore magnam eligendi fugit perspiciatis quasi! Velit corporis, minima id numquam earum eaque reiciendis distinctio cupiditate unde obcaecati rem dicta, accusantium ducimus quo sed laudantium incidunt dolore odit! Autem maiores dolores repellendus ipsum tempore asperiores modi fugiat distinctio nisi fuga harum praesentium excepturi rerum consequuntur, mollitia dignissimos, repudiandae recusandae culpa qui. In mollitia dolore iusto. Maiores quasi placeat laudantium. Id harum aspernatur qui, quibusdam, quod corrupti excepturi omnis consequuntur molestiae sapiente fugit nostrum? Necessitatibus aliquid alias aut sed, harum, laborum natus doloribus rerum, possimus dolorem aspernatur. Laudantium deleniti eveniet tenetur ullam adipisci ea eius dolor magnam! Ducimus iste consequatur consequuntur veritatis quaerat quidem numquam, odio doloribus dignissimos mollitia porro, iure expedita! Hic sunt voluptatum, in dignissimos facilis libero, alias ea dolore eveniet id eius, excepturi corporis incidunt eum itaque quos earum unde! Vel enim facilis, ut explicabo, nulla quia iste dolores totam ipsum atque eveniet quisquam quaerat praesentium pariatur expedita quo accusamus eaque, laboriosam ad earum nisi facere! Omnis quibusdam eligendi sint itaque vel, amet distinctio alias eum cum, tenetur numquam quod, architecto consequatur consequuntur doloribus iusto! Iure exercitationem dolore obcaecati asperiores sapiente fuga itaque repudiandae alias reprehenderit, fugit praesentium quae. Porro rerum ut eum! Optio, incidunt officiis quos reiciendis voluptatem consequatur doloremque eos mollitia maiores?</p>
         </section>
         <aside class="bdr">
-            <h1>well come to css temples 2024</h1>
+            <h1>more about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, asperiores quas hic dolor aliquid itaque. Reprehenderit culpa rem illum omnis blanditiis. Quibusdam voluptatum, ratione rem quaerat quae impedit temporibus qui.</p>
         </aside>
     </div>
     <footer class="bdr">copyright mytemples</footer>
