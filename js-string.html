@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS String</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is a heading</h1>
+      <h3 id="content"></h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores non
+        eligendi asperiores expedita dicta repudiandae quis debitis voluptatum
+        vel officia aut obcaecati nihil est consectetur nemo id esse, tenetur
+        eaque.
+      </p>
+    </div>
+    <script>
+      var string = "hello";
+      var name = "hello";
+      var message = "hello how are you";
+      var temp = `${name} how are "you 'and the message is ${message}`;
+      //   console.log(string + name  + message);
+      //   console.log(temp);
+      var len = name.length;
+      // console.log(`length of name is ${len}`);
+      // console.log(`hello world \nstring`);
+      var y = new String("ffk");
+      // console.log(y);
+      document.getElementById("content").innerHTML = `<h3>This is a box</h3>`;
+    </script>
+  </body>
+</html>
