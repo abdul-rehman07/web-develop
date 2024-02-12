@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Function in JS</title>
+  </head>
+  <body>
+    <script>
+      var str = "This is a String and String and String";
+      console.log(str);
+      //taking first index value
+      var position = str.indexOf("is");
+      console.log(position);
+      //taking last index value
+      position = str.lastIndexOf("is");
+      console.log(position);
+
+      //taking also negitive value
+      var substr = str.slice(1, 4);
+      console.log(substr);
+      var substr2 = str.substring(1, 4);
+      console.log(substr2);
+
+      var substr3 = str.substr(1, 7);
+      console.log(substr3);
+
+      var substr4 = str.concat("New string");
+      console.log(substr4);
+
+      var change = str.replaceAll("String", "bling");
+      console.log(str);
+      console.log(change);
+
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+      var text = "   This is the     box    ";
+      console.log(text);
+      console.log(text.trim());
+
+      var char1 = str.charAt(3);
+      console.log(char1);
+      var char21 = str.charCodeAt(3);
+      console.log(char21);
+    </script>
+  </body>
+</html>
