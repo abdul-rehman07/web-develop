@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops in JS</title>
+  </head>
+  <body>
+    <div>learning Loops in JS</div>
+  </body>
+  <script>
+    console.log("Loops in JS");
+    let i = 0;
+    for (let i = 0; i < 3; i++) {
+      console.log(i);
+    }
+    let friends = ["Hunny", "Bunny", "Sunny", "Lunny", "Tunny"];
+    for (let index = 0; index < friends.length; index++) {
+      console.log("Hello Friend, " + friends[index]);
+    }
+    friends.forEach(function f(element) {
+      console.log("Hello Friend, " + element + " Well come ");
+    });
+    for (element of friends) {
+      console.log("Hello Friend, " + element + " Well come again ");
+    }
+    let boy = {
+      name: "hunny",
+      salary: 2,
+      channal: "good",
+    };
+    for (key in boy) {
+      console.log(`${key} of the boy is ${boy[key]}`);
+    }
+    let j = 0;
+    while (j < 4) {
+      console.log(`${j} j is less then 4`);
+      j++;
+    }
+
+    let k = 0;
+    do {
+      console.log(`k is less then 4`);
+      k++;
+    } while (k < 4);
+  </script>
+</html>
