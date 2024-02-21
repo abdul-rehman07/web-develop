@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeOut and SetInterval in JS</title>
+  </head>
+  <body>
+    <div class="container">Time now is <span id="time"></span></div>
+  </body>
+  <script>
+    console.log("About timeout and setinterval");
+    function greet(name, byetext) {
+      console.log("Good Morning" + " " + name + byetext);
+    }
+    timeOut = setTimeout(greet, 3000, "hunny", " Good bye");
+    console.log(timeOut);
+    clearTimeout(timeOut);
+    intervaltime = setInterval(greet, 1000, "hunny", " take care");
+
+    clearInterval(intervaltime);
+    // setTimeout(greet(), 2000); --> his is not work with using function call
+
+    function display() {
+      time = new Date();
+      console.log(time);
+      document.getElementById("time").innerHTML = time;
+    }
+    setTimeout(display, 1000);
+  </script>
+</html>
