@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time in JS</title>
+  </head>
+  <style>
+    .container {
+      font-size: 23px;
+      padding: 12px 12px;
+      margin: 2px 4px;
+      background-color: blanchedalmond;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 12px;
+    }
+    #time {
+      font: bold;
+    }
+  </style>
+  <body>
+    <div id="time">The current time is <span id="time"></span></div>
+  </body>
+  <script>
+    let now = new Date();
+    console.log(now);
+
+    let dt = new Date(0);
+    console.log(dt);
+
+    let newdate = new Date("2025-4-5");
+    console.log(newdate);
+
+    // let newdate2 = new Date(year, month, date, hour, minutes, seconds, milliseconds);
+    let newdate2 = new Date(2050, 1, 2, 6, 56, 57, 7);
+    console.log(newdate2);
+    let dat = newdate2.getDate();
+    console.log("The date is", +dat);
+
+    let day = newdate2.getDay();
+    console.log("The day is", +day);
+    let year = newdate2.getFullYear();
+    console.log("The year is", +year);
+    let hours = newdate2.getHours();
+    console.log("The hours is", +hours);
+    let min = newdate2.getMinutes();
+    console.log("The minutes is", +min);
+    let sec = newdate2.getSeconds();
+    console.log("The seconds is", +sec);
+
+    newdate2.setDate(11);
+    console.log(newdate2);
+    newdate2.setFullYear(20255);
+    console.log(newdate2);
+
+    setInterval(currenttime, 1000);
+
+    function currenttime() {
+      time.innerHTML = new Date();
+    }
+    console.log(time);
+    const reference = document.getElementById("time");
+    console.log(reference);
+  </script>
+</html>
