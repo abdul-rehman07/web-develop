@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function in JS</title>
+  </head>
+  <body>
+    <div class="container">Using Arrow Function in JS</div>
+  </body>
+  <script>
+    console.log("Arrow Functions");
+    // function greets() {
+    //   console.log("Well Come");
+    // }
+    // greets();
+
+    // let greets = () => {
+    //   console.log("Well Come to JS");
+    // };
+    // greets();
+    let sum = (a, b) => {
+      return a + b;
+    };
+    let sum3 = (a, b) => a + b;
+
+    let half = (a) => a / 2;
+
+    setTimeout(() => {
+      console.log("after the 3 seconds");
+    }, 3000);
+
+    let array = {
+      greet: "hunny ",
+      names: ["hunny", "bunny", "sunny"],
+      run() {
+        this.names.forEach((student) => {
+          console.log(this.greet + "hello " + student);
+        });
+      },
+    };
+    array.run();
+  </script>
+</html>
